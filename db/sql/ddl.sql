@@ -103,6 +103,7 @@ create table user
     sex varchar(10) null,
     weight double null,
     height double null,
+    birthday date not null,
     role_id int not null,
     constraint user_email_uindex
         unique (email),

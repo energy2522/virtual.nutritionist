@@ -1,5 +1,6 @@
 package ua.nure.virtual.nutritionist.domain;
 
+import java.sql.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -40,6 +41,9 @@ public class User {
 
     @Column(name = "height")
     private double height;
+
+    @Column(name = "birthday", nullable = false)
+    private Date birthday;
 
     @ManyToOne
     @JoinColumn(name = "role_id", nullable = false)
